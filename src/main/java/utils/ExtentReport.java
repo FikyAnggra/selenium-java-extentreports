@@ -10,7 +10,7 @@ public class ExtentReport {
     private static ExtentTest parentTest;
 
     public static void setup() {
-        ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir") + "/test-output" +
+        ExtentSparkReporter spark = new ExtentSparkReporter(System.getProperty("user.dir") + "/report" +
                 "/extentReportHTML.html");
         spark.config().setDocumentTitle("Automation Report");
         spark.config().setReportName("Automation Report");
